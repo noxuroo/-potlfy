@@ -1,0 +1,23 @@
+.skin{
+    width: 100%;
+    height: 85vh;
+    margin-top: 1vh;
+    background-color: #121212;
+    border-radius: min(0.52083vw, 0.92593vh);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SvgTxtYourLibrary{
+    width: 100%;
+    margin-left: 1.5vh;
+    margin-top: 1.5vh;
+    align-self: flex-start;
+}
+
+.svgtxtcont{
+    width: 1.8vw;
+    height: 8vh;
+    
+}

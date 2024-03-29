@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#root{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: Anta-Regular;
+    src: url('./fonts/Anta-Regular.ttf');
+}

@@ -1,0 +1,11 @@
+.skin{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+}
+
+.leftBar{
+    width: 20.5vw;
+    height: 98vh;
+
+}
