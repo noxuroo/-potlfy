@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className={style.skin}>
       <div className={style.leftBar} style={{width:leftBarDefault?'4vw':''}}>
-      <LeftTopBar />
+      <LeftTopBar currentStateLeftBarDefault={leftBarDefault}/>
       <LeftBotBar leftBarDefault={setLeftBarHidden} currentStateLeftBarDefault={leftBarDefault}/>
       </div>
       <RightBar leftBarDefault={leftBarDefault}/>

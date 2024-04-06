@@ -4,9 +4,10 @@
     margin-top: 1vh;
     background-color: #121212;
     border-radius: min(0.52083vw, 0.92593vh);
-    display: flex;
     align-items: center;
     flex-direction: column;
+    max-height: 85vh;
+    overflow-y: auto;
 }
 
 .SvgTxtYourLibrary{
@@ -14,10 +15,27 @@
     margin-left: 1.5vh;
     margin-top: 1.5vh;
     align-self: flex-start;
+    
 }
 
 .svgtxtcont{
     width: 1.8vw;
     height: 8vh;
-    
+    cursor: pointer;
+}
+
+.MusicPlatesLimit{
+    width: 100%;
+    height: 6.5vh;
+    margin-top: 1vh;   
+}
+
+.skin::-webkit-scrollbar {
+    width: 0.5vw;
+    height: 1vh;
+}
+
+.skin::-webkit-scrollbar-thumb {
+    background-color: #595959;
+    border-radius: 2vh;
 }

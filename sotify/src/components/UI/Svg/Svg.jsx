@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import style from './Svg.module.css'
 
-const Svg = ({ svgDefault, svgHover }) => {
+const Svg = ({ svgDefault, svgHover, svgFocus, onClick, onClickState}) => {
 
     const [svgCode, setSvgCode] = useState(svgDefault)
 
@@ -11,6 +11,7 @@ const Svg = ({ svgDefault, svgHover }) => {
             dangerouslySetInnerHTML={{ __html: svgCode }}
             onMouseLeave={() => {setSvgCode(svgDefault)}}
             onMouseOver={() => {setSvgCode(svgHover)}}
+            onClick={() => {onClick(!onClickState)}}
         />
     )
 }

@@ -3,8 +3,11 @@ import SvgTxt from '../../../UI/SvgTxt/SvgTxt'
 import style from './LeftBotBar.module.css'
 import EverySvgs from '../../../../svgData'
 import Svg from '../../../UI/Svg/Svg'
+import MusicPlate from '../../../UI/MusicPlate/MusicPlate'
+import Music from '../../../../musicData'
 
 const LeftBotBar = ({ leftBarDefault, currentStateLeftBarDefault }) => {
+const MusicPlates = Music.map(element=><div className={style.MusicPlatesLimit}><MusicPlate data={element}/></div>)
   return (
     <div className={style.skin}>
       {currentStateLeftBarDefault
@@ -12,6 +15,8 @@ const LeftBotBar = ({ leftBarDefault, currentStateLeftBarDefault }) => {
           <Svg
             svgDefault={EverySvgs['YourLibrary']['DefaultExp']}
             svgHover={EverySvgs['YourLibrary']['HoverExp']}
+            onClick={leftBarDefault}
+            onClickState={currentStateLeftBarDefault}
           />
         </div>
         :
@@ -26,7 +31,7 @@ const LeftBotBar = ({ leftBarDefault, currentStateLeftBarDefault }) => {
             onClickState={currentStateLeftBarDefault}
           />
         </div>}
-
+    {MusicPlates}
 
     </div>
   )
