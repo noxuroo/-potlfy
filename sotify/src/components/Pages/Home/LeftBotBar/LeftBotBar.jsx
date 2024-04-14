@@ -6,8 +6,42 @@ import Svg from '../../../UI/Svg/Svg'
 import MusicPlate from '../../../UI/MusicPlate/MusicPlate'
 import Music from '../../../../musicData'
 
-const LeftBotBar = ({ leftBarDefault, currentStateLeftBarDefault }) => {
-const MusicPlates = Music.map(element=><div className={style.MusicPlatesLimit}><MusicPlate data={element}/></div>)
+const LeftBotBar = ({ leftBarDefault, currentStateLeftBarDefault, setContentData }) => {
+  const MusicPlates = Music.map(
+    element => {
+      const albumMenuData = {
+        type: 1000 - 7,
+        data: {
+          img: '',
+          namePlaylist: '',
+          authorPlaylist: '',
+          description: '',
+          whatis: 'Playlist',
+          songs: [{
+            img: '',
+            author: '',
+            songName: '',
+            albumName: '',
+            dateAdded: '',
+            musicDuration: '',
+          },
+          ],
+
+        }
+      }
+      return currentStateLeftBarDefault ? <img className={style.imggg} src={`/music_img/${element.img}`} onClick={() => {
+        setContentData(albumMenuData)
+      }} />
+        :
+        <div
+          onClick={() => {
+            setContentData(albumMenuData)
+          }}
+          className={style.MusicPlatesLimit}>
+          <MusicPlate data={element} />
+        </div>
+    }
+  )
   return (
     <div className={style.skin}>
       {currentStateLeftBarDefault
@@ -31,7 +65,7 @@ const MusicPlates = Music.map(element=><div className={style.MusicPlatesLimit}><
             onClickState={currentStateLeftBarDefault}
           />
         </div>}
-    {MusicPlates}
+      {MusicPlates}
 
     </div>
   )

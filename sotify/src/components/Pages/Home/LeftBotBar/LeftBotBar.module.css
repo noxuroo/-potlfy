@@ -4,8 +4,6 @@
     margin-top: 1vh;
     background-color: #121212;
     border-radius: min(0.52083vw, 0.92593vh);
-    align-items: center;
-    flex-direction: column;
     max-height: 85vh;
     overflow-y: auto;
 }
@@ -22,6 +20,7 @@
     width: 1.8vw;
     height: 8vh;
     cursor: pointer;
+    margin-left: calc((4vw - 1.8vw)/2);
 }
 
 .MusicPlatesLimit{
@@ -31,11 +30,21 @@
 }
 
 .skin::-webkit-scrollbar {
-    width: 0.5vw;
+    width: 0.21vw;
     height: 1vh;
 }
 
 .skin::-webkit-scrollbar-thumb {
     background-color: #595959;
     border-radius: 2vh;
+}
+
+.imggg{
+    width: 6vh;
+    height: 6vh;
+    margin-top: 0.7vh;
+    align-self: center;
+    overflow: hidden;
+    border-radius: 10%;
+    margin-left: calc((4vw - 6vh)/2);
 }
