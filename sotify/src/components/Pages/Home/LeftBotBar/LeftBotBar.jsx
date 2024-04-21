@@ -12,18 +12,18 @@ const LeftBotBar = ({ leftBarDefault, currentStateLeftBarDefault, setContentData
       const albumMenuData = {
         type: 1000 - 7,
         data: {
-          img: '',
-          namePlaylist: '',
-          authorPlaylist: '',
-          description: '',
+          img: 'apfs',
+          namePlaylist: 'yaneibu',
+          authorPlaylist: 'yaneibu',
+          description: 'yaneibu',
           whatis: 'Playlist',
           songs: [{
-            img: '',
-            author: '',
-            songName: '',
-            albumName: '',
-            dateAdded: '',
-            musicDuration: '',
+            img: 'apfs',
+            author: 'apfs',
+            songName: 'sobachiy vals',
+            albumName: 'yaneibu',
+            dateAdded: 'yaneibu',
+            musicDuration: '2:50',
           },
           ],
 

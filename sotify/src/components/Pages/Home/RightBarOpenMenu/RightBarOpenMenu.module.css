@@ -1,0 +1,41 @@
+.whatis{
+    color: #f8f3ef;
+    margin-top: 6vh;
+}
+.namePlaylist{
+    color: #f8f3ef;
+    margin-top: -1vh;
+    font-size: 10vh;
+}
+
+.authorPlaylist{
+    margin-top: 5vh;
+    color: #f8f3ef;
+    margin-top: 5vh;
+}
+
+
+.img{
+    width: 35vh;
+    height: 35vh;
+    border-radius: 10%;
+    margin-top: 8vh;
+    margin-left: 1vw;
+}
+
+.img img{
+    height: 100%;
+    width: 100%;
+}
+
+.fullblock{
+    display: flex;
+}
+
+.fullblocktext{
+    margin-top: 8vh;
+    width: 35vw;
+    height: 35vh;
+    margin-left: 2vh;
+    overflow-y: hidden;
+}
