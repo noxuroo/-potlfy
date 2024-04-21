@@ -5,7 +5,6 @@ import EverySvgs from '../../../../svgData'
 import Svg from '../../../UI/Svg/Svg'
 
 const LeftTopBar = ({ currentStateLeftBarDefault }) => {
-  console.log(currentStateLeftBarDefault)
   return (
 
     <div className={style.skin}>
