@@ -16,3 +16,8 @@
     font-family: Anta-Regular;
     src: url('./fonts/Anta-Regular.ttf');
 }
+
+a{
+    color: inherit;
+    text-decoration: none;
+}

@@ -9,15 +9,19 @@
 }
 
 .authorPlaylist{
-    margin-top: 5vh;
     color: #f8f3ef;
-    margin-top: 5vh;
+    margin-top: 1.5vh;
 }
 
+.description{
+    color: #74706e;
+    margin-top: 1.5vh;
+    margin-bottom: -2.5vh;
+}
 
 .img{
-    width: 35vh;
-    height: 35vh;
+    width: 25vh;
+    height: 25vh;
     border-radius: 10%;
     margin-top: 8vh;
     margin-left: 1vw;
@@ -28,14 +32,126 @@
     width: 100%;
 }
 
-.fullblock{
+.topSide{
     display: flex;
 }
 
-.fullblocktext{
-    margin-top: 8vh;
+.topSideText{
+    margin-top: 4.5vh;
     width: 35vw;
     height: 35vh;
     margin-left: 2vh;
     overflow-y: hidden;
+}
+
+.lineseptopbot{
+    width: 100%;
+    height: 0.3vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(92,92,92,1) 50%, rgba(153,153,153,0) 100%);
+}
+
+.botSide{
+    margin-top: 1vh;
+    width: 100%;
+    height: auto;
+    border: 1px red solid;
+}
+
+.topsidebotside{
+    width: 100%;
+    height: 8vh;
+    border: 1px green solid;
+    display: flex;
+    align-items: center;
+}
+
+.midsidebotside{
+    width: 100%;
+    height: 5vh;
+    border: 1px yellow solid;
+    display: flex;
+    align-items: center ;
+}
+
+.botsidebotside{
+    width: 100%;
+    height: auto;
+    border: 1px blue solid;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 7vh;
+    width: 7vh;
+    background-color: #1ED760;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3vh;
+    cursor: pointer;
+    &:hover{
+        height: 7.1vh;
+        width: 7.1vh;
+    }
+}
+
+.mpoint{
+    height: 5vh;
+    width: 5vh;
+    color: #8A8A8A;
+    font-size: 4vh;
+    margin-left: 1.2vh;
+    overflow-y: hidden;
+    cursor: pointer;
+    &:hover{
+        font-size: 4.1vh;
+        color: #C9C9C9;
+    }
+}
+
+.shufflesvg{
+    width: 4.5vh;
+    object-fit: contain;
+    margin-left: 1vh;
+    cursor: pointer;
+    &:hover path{
+        fill: #C9C9C9
+    }
+    &:hover{
+        width: 4.6vh;
+    }
+} 
+
+.hashtag{
+    color: #8A8A8A;
+    margin-left: 6vh;
+    cursor: default;
+}
+
+.title{
+    color: #8A8A8A;
+    margin-left: 1vh;
+    cursor: default;
+    &:hover{
+        color: #C9C9C9
+    }
+}
+
+.album{
+    color: #8A8A8A;
+    margin-left: 65vh;
+    cursor: default;
+    &:hover{
+        color: #C9C9C9
+    }
+}
+
+.timeduration{
+    color: #8A8A8A;
+    margin-left: 65vh;
+    cursor: default;
+    &:hover{
+        color: #C9C9C9
+    }
 }

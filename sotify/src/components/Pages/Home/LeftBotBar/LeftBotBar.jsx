@@ -5,30 +5,12 @@ import EverySvgs from '../../../../svgData'
 import Svg from '../../../UI/Svg/Svg'
 import MusicPlate from '../../../UI/MusicPlate/MusicPlate'
 import Music from '../../../../musicData'
+import Album from '../../../../albumData'
 
 const LeftBotBar = ({ leftBarDefault, currentStateLeftBarDefault, setContentData }) => {
   const MusicPlates = Music.map(
-    element => {
-      const albumMenuData = {
-        type: 1000 - 7,
-        data: {
-          img: 'apfs',
-          namePlaylist: 'yaneibu',
-          authorPlaylist: 'yaneibu',
-          description: 'yaneibu',
-          whatis: 'Playlist',
-          songs: [{
-            img: 'apfs',
-            author: 'apfs',
-            songName: 'sobachiy vals',
-            albumName: 'yaneibu',
-            dateAdded: 'yaneibu',
-            musicDuration: '2:50',
-          },
-          ],
-
-        }
-      }
+    (element,index) => {
+      const albumMenuData = {type:993,data:Album[index]}
       return currentStateLeftBarDefault ? <img className={style.imggg} src={`/music_img/${element.img}`} onClick={() => {
         setContentData(albumMenuData)
       }} />
