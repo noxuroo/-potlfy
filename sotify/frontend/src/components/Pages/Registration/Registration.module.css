@@ -1,0 +1,51 @@
+.bigblock {
+    width: 30vw;
+    height: 100vh;
+    margin-left: 35vw;
+    overflow-y: hidden;
+    background-color: red;
+}
+
+.confirm {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    cursor: pointer;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(117, 209, 117);
+    width: 10vw;
+    height: 5vh;
+    border-radius: 5vh;
+    margin-top: 3vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-size: 4vh;
+    text-align: center;
+    color: white;
+    margin-bottom: 2vh;
+}
+
+.input {
+    width: 10vw;
+    height: 3vh;
+    margin-top: 0.5vh;
+    text-align: center;
+}

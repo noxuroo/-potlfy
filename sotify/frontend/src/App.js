@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Pages/Home/Home';
 import Registration from './components/Pages/Registration/Registration';
 import Unexpage from './components/Pages/Unexpage/Unexpage';
+import Login from './components/Pages/Login/Login';
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/registration/" element={<Registration />} />
+        <Route path="/login/" element={<Login />} />
         <Route path="*" element={<Unexpage />} />
       </Routes>
     </BrowserRouter> 

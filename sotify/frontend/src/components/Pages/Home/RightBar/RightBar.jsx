@@ -12,10 +12,10 @@ const RightBar = ({ leftBarDefault, data }) => {
       :
       <div className={style.homePage}>
         <div className={style.loginreg}>
-          <Link to="/registration">
+          <Link to="/login">
             <div className={style.reg}>Sign up</div>
           </Link>
-          <Link to="/registration>">
+          <Link to="/registration">
             <div className={style.login}>Log in</div>
           </Link>
         </div>
